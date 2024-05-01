@@ -20,8 +20,8 @@ const button = tv({
       ghost: 'text-zinc-400 bg-transparent border border-transparent hover:border-zinc-800 focus:ring-zinc-600/60'
     },
     size: {
-      small: 'px-3 h-7',
-      default: 'px-4 h-9',
+      small: 'px-3 h-7 text-xs',
+      default: 'px-4 h-9 text-sm',
     },
   },
   defaultVariants: {

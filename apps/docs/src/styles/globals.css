@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-zinc-950
+    @apply bg-zinc-950 antialiased
   }
 }
