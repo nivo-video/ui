@@ -24,12 +24,11 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Run command inside ./apps/docs folder
-        run: |
-          cd ./apps/docs
-          bitovi/github-actions-storybook-to-github-pages@v1.0.3
+      - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
           install_command: pnpm install 
-          build_command: pnpm build-storybook
+          build_command: |
+            cd ./apps/docs
+            pnpm build-storybook
           path: storybook-static
           checkout: false
