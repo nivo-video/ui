@@ -36,6 +36,9 @@ importers:
       '@nivo/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/config-tailwind
+      '@nivo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/config-typescript
       '@storybook/addon-essentials':
         specifier: ^8.0.9
         version: 8.0.9(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -60,6 +63,9 @@ importers:
       '@storybook/test':
         specifier: ^8.0.9
         version: 8.0.9
+      '@types/react':
+        specifier: ^18.2.61
+        version: 18.3.1
       eslint:
         specifier: ^8
         version: 8.57.0
@@ -72,52 +78,6 @@ importers:
       storybook:
         specifier: ^8.0.9
         version: 8.0.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.3
-
-  apps/web:
-    dependencies:
-      '@nivo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      next:
-        specifier: ^14.1.1
-        version: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react:
-        specifier: ^18.2.0
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.3.1(react@18.3.1)
-    devDependencies:
-      '@next/eslint-plugin-next':
-        specifier: ^14.1.1
-        version: 14.2.3
-      '@nivo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/config-eslint
-      '@nivo/tailwind-config':
-        specifier: workspace:*
-        version: link:../../packages/config-tailwind
-      '@nivo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/config-typescript
-      '@types/node':
-        specifier: ^20.11.24
-        version: 20.12.7
-      '@types/react':
-        specifier: ^18.2.61
-        version: 18.3.1
-      '@types/react-dom':
-        specifier: ^18.2.19
-        version: 18.3.0
-      autoprefixer:
-        specifier: ^10.4.18
-        version: 10.4.19(postcss@8.4.38)
-      postcss:
-        specifier: ^8.4.35
-        version: 8.4.38
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.3
@@ -146,6 +106,13 @@ importers:
   packages/config-typescript: {}
 
   packages/ui:
+    dependencies:
+      '@radix-ui/react-slot':
+        specifier: ^1.0.2
+        version: 1.0.2(@types/react@18.3.1)(react@18.3.1)
+      tailwind-variants:
+        specifier: ^0.2.1
+        version: 0.2.1(tailwindcss@3.4.3)
     devDependencies:
       '@nivo/eslint-config':
         specifier: workspace:*
@@ -1706,9 +1673,6 @@ packages:
 
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
-
-  '@types/react-dom@18.3.0':
-    resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
   '@types/react@18.3.1':
     resolution: {integrity: sha512-V0kuGBX3+prX+DQ/7r2qsv1NsdfnCLnTgnRJ1pYnxykBhGMz+qj+box5lq7XsO5mtZsBqpjwwTu/7wszPfMBcw==}
@@ -5068,6 +5032,15 @@ packages:
     resolution: {integrity: sha512-7RnqIMq572L8PeEzKeBINYEJDDxpcH8JEgLwUqBd3TkofhFRbkq4QLR0u+36avGAhCRbk2nnmjcW9SE531hPDg==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
+  tailwind-merge@2.3.0:
+    resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
+
+  tailwind-variants@0.2.1:
+    resolution: {integrity: sha512-2xmhAf4UIc3PijOUcJPA1LP4AbxhpcHuHM2C26xM0k81r0maAO6uoUSHl3APmvHZcY5cZCY/bYuJdfFa4eGoaw==}
+    engines: {node: '>=16.x', pnpm: '>=7.x'}
+    peerDependencies:
+      tailwindcss: '*'
+
   tailwindcss@3.4.3:
     resolution: {integrity: sha512-U7sxQk/n397Bmx4JHbJx/iSOOv5G+II3f1kpLpY2QeUv5DcPdcTsYLlusZfq1NthHS1c1cZoyFmmkex1rzke0A==}
     engines: {node: '>=14.0.0'}
@@ -6635,6 +6608,7 @@ snapshots:
   '@next/eslint-plugin-next@14.2.3':
     dependencies:
       glob: 10.3.10
+    optional: true
 
   '@next/swc-darwin-arm64@14.2.3':
     optional: true
@@ -7596,10 +7570,6 @@ snapshots:
   '@types/qs@6.9.15': {}
 
   '@types/range-parser@1.2.7': {}
-
-  '@types/react-dom@18.3.0':
-    dependencies:
-      '@types/react': 18.3.1
 
   '@types/react@18.3.1':
     dependencies:
@@ -9599,6 +9569,7 @@ snapshots:
       minimatch: 9.0.4
       minipass: 7.0.4
       path-scurry: 1.10.2
+    optional: true
 
   glob@10.3.12:
     dependencies:
@@ -11458,6 +11429,15 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.1.1
       tslib: 2.6.2
+
+  tailwind-merge@2.3.0:
+    dependencies:
+      '@babel/runtime': 7.24.5
+
+  tailwind-variants@0.2.1(tailwindcss@3.4.3):
+    dependencies:
+      tailwind-merge: 2.3.0
+      tailwindcss: 3.4.3
 
   tailwindcss@3.4.3:
     dependencies:
