@@ -32,5 +32,5 @@ jobs:
           build_command: |
             cd ./apps/docs
             pnpm build-storybook
-          path: storybook-static
+          path: ./apps/docs/storybook-static
           checkout: false
