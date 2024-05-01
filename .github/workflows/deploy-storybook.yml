@@ -26,7 +26,9 @@ jobs:
 
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
-          install_command: pnpm install 
+          install_command: |
+            pnpm install
+            pnpm build 
           build_command: |
             cd ./apps/docs
             pnpm build-storybook
