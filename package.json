@@ -5,14 +5,10 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
-    "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "clean": "turbo clean"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.11",
-    "@nivo/typescript-config": "workspace:*",
+    "@biomejs/biome": "1.7.2",
     "turbo": "latest"
   },
   "packageManager": "pnpm@9.0.4",
