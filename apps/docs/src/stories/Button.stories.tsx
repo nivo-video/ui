@@ -11,7 +11,7 @@ const meta = {
   },
   argTypes: {
     variant: {
-      options: ['default', 'primary', 'secondary', 'ghost'],
+      options: ['default', 'primary', 'secondary', 'danger', 'ghost'],
       control: {
         type: 'select',
       },
@@ -62,6 +62,14 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
+    size: "default",
+    onClick: () => alert('clicked')
+  },
+};
+
+export const Danger: Story = {
+  args: {
+    variant: 'danger',
     size: "default",
     onClick: () => alert('clicked')
   },
