@@ -7,7 +7,9 @@
 		"formatter": {
 			"quoteStyle": "single",
 			"arrowParentheses": "asNeeded",
-			"semicolons": "asNeeded"
+			"semicolons": "asNeeded",
+			"indentStyle": "space",
+			"indentWidth": 2
 		}
 	},
 	"files": {
