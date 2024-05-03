@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0",
     "tailwind-variants": "^0.2.1"
   }
 }

@@ -2,6 +2,7 @@ import { Slot } from '@radix-ui/react-slot'
 import type { ButtonHTMLAttributes } from 'react'
 import type { VariantProps } from 'tailwind-variants'
 import { tv } from 'tailwind-variants'
+import { cn } from './cn'
 
 type ButtonVariants = VariantProps<typeof button>
 
@@ -43,13 +44,14 @@ export function Button({
 	children,
 	variant,
 	size,
+	className,
 	...delegated
 }: ButtonProps): JSX.Element {
 	const Component = asChild ? Slot : 'button'
 
 	return (
 		<Component
-			className={button({ variant, size })}
+			className={cn(button({ variant, size }), className)}
 			type="button"
 			{...delegated}
 		>
