@@ -1,4 +1,8 @@
-import { forwardRef, type ComponentPropsWithoutRef } from 'react'
+import {
+  forwardRef,
+  type ComponentPropsWithoutRef,
+  type ElementRef,
+} from 'react'
 import * as RadixLabel from '@radix-ui/react-label'
 import { tv, type VariantProps } from 'tailwind-variants'
 import { cn } from './cn'
@@ -24,26 +28,25 @@ const label = tv({
   },
 })
 
-export const Label = forwardRef<
-  React.ElementRef<typeof RadixLabel.Root>,
-  LabelProps
->(({ className, children, required = false, size, ...delegated }, ref) => {
-  return (
-    <RadixLabel.Root
-      ref={ref}
-      className={cn(label({ size }), className)}
-      {...delegated}
-    >
-      {children}
+export const Label = forwardRef<ElementRef<typeof RadixLabel.Root>, LabelProps>(
+  ({ className, children, required = false, size, ...delegated }, ref) => {
+    return (
+      <RadixLabel.Root
+        ref={ref}
+        className={cn(label({ size }), className)}
+        {...delegated}
+      >
+        {children}
 
-      {required && (
-        <span className="text-xs text-zinc-500" aria-hidden="true">
-          {' '}
-          *
-        </span>
-      )}
-    </RadixLabel.Root>
-  )
-})
+        {required && (
+          <span className="text-xs text-zinc-500" aria-hidden="true">
+            {' '}
+            *
+          </span>
+        )}
+      </RadixLabel.Root>
+    )
+  },
+)
 
 Label.displayName = 'Label'
