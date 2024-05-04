@@ -3,6 +3,6 @@ const config = {
   plugins: {
     tailwindcss: {},
   },
-};
+}
 
-module.exports = config;
+module.exports = config

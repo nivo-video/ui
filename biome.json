@@ -1,0 +1,60 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"arrowParentheses": "asNeeded",
+			"semicolons": "asNeeded",
+			"indentStyle": "space",
+			"indentWidth": 2
+		}
+	},
+	"files": {
+		"ignoreUnknown": true,
+		"ignore": [
+			".next",
+			"node_modules/**",
+			"**/*.json",
+			"**/dist",
+			"**/out",
+			"**/.next",
+			"public/**/*.js"
+		]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noUselessFragments": "warn"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "warn"
+			},
+			"suspicious": {
+				"noExplicitAny": "warn"
+			},
+			"nursery": {
+				"useSortedClasses": {
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cva", "tw", "tv"]
+					}
+				}
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"ignore": [
+			"node_modules/*",
+			"*.config.*",
+			"*.json",
+			"tsconfig.json",
+			".turbo"
+		]
+	}
+}
