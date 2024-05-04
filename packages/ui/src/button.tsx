@@ -1,7 +1,6 @@
 import { Slot } from '@radix-ui/react-slot'
 import type { ButtonHTMLAttributes } from 'react'
-import type { VariantProps } from 'tailwind-variants'
-import { tv } from 'tailwind-variants'
+import { tv, type VariantProps } from 'tailwind-variants'
 import { cn } from './cn'
 
 type ButtonVariants = VariantProps<typeof button>
@@ -14,7 +13,7 @@ interface ButtonProps
 }
 
 const button = tv({
-  base: 'flex w-fit cursor-default items-center gap-2 rounded font-medium outline-none ring-offset-zinc-950 transition-colors disabled:cursor-not-allowed disabled:opacity-60 focus:ring-2 focus:ring-offset-2',
+  base: 'flex w-fit cursor-default items-center gap-2 rounded font-medium outline-none ring-offset-zinc-950 transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-60 focus:ring-2 focus:ring-offset-2',
   variants: {
     variant: {
       default:
