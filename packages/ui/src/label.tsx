@@ -1,8 +1,6 @@
-import { forwardRef } from 'react'
+import { forwardRef, type ComponentPropsWithoutRef } from 'react'
 import * as RadixLabel from '@radix-ui/react-label'
-import type { ComponentPropsWithoutRef } from 'react'
-import { tv } from 'tailwind-variants'
-import type { VariantProps } from 'tailwind-variants'
+import { tv, type VariantProps } from 'tailwind-variants'
 import { cn } from './cn'
 
 type LabelVariants = VariantProps<typeof label>

@@ -1,7 +1,6 @@
 import { Slot } from '@radix-ui/react-slot'
 import type { ButtonHTMLAttributes } from 'react'
-import type { VariantProps } from 'tailwind-variants'
-import { tv } from 'tailwind-variants'
+import { tv, type VariantProps } from 'tailwind-variants'
 import { cn } from './cn'
 
 type ButtonVariants = VariantProps<typeof button>
