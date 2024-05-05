@@ -9,7 +9,8 @@
     "./button": "./src/button.tsx",
     "./label": "./src/label.tsx",
     "./input": "./src/input.tsx",
-    "./input-error-message": "./src/input-error-message.tsx"
+    "./input-error-message": "./src/input-error-message.tsx",
+    "./divider": "./src/divider.tsx"
   },
   "license": "MIT",
   "scripts": {
@@ -32,6 +33,7 @@
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.3.0",
