@@ -39,8 +39,7 @@ export const Label = forwardRef<ElementRef<typeof RadixLabel.Root>, LabelProps>(
         {children}
 
         {required && (
-          <span className="text-xs text-zinc-500" aria-hidden="true">
-            {' '}
+          <span className="ml-1 text-xs text-zinc-500" aria-hidden="true">
             *
           </span>
         )}
