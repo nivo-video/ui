@@ -10,6 +10,7 @@
     "./label": "./src/label.tsx",
     "./input": "./src/input.tsx",
     "./input-error-message": "./src/input-error-message.tsx",
+    "./alert": "./src/alert.tsx",
     "./divider": "./src/divider.tsx"
   },
   "license": "MIT",
