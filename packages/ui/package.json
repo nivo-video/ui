@@ -9,7 +9,8 @@
     "./button": "./src/button.tsx",
     "./label": "./src/label.tsx",
     "./input": "./src/input.tsx",
-    "./input-error-message": "./src/input-error-message.tsx"
+    "./input-error-message": "./src/input-error-message.tsx",
+    "./alert": "./src/alert.tsx"
   },
   "license": "MIT",
   "scripts": {
