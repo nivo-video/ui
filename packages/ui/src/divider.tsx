@@ -3,10 +3,10 @@ import type { ComponentPropsWithoutRef } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 import { cn } from './cn'
 
-type LabelVariants = VariantProps<typeof divider>
+type DividerVariants = VariantProps<typeof divider>
 
 type DividerProps = ComponentPropsWithoutRef<typeof RadixSeparator.Root> &
-  LabelVariants
+  DividerVariants
 
 const divider = tv({
   base: 'bg-zinc-900 data-[orientation=horizontal]:h-px data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-px',
