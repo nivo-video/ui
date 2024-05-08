@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Divider } from '@nivo/ui/divider'
+import { Divider } from '@nivovideo/ui/divider'
 
 const meta = {
   title: 'Components/Divider',

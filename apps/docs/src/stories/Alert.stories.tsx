@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Alert } from '@nivo/ui/alert'
+import { Alert } from '@nivovideo/ui/alert'
 
 const meta = {
   title: 'Components/Alert',

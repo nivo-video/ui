@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import sharedConfig from '@nivo/tailwind-config'
+import sharedConfig from '@nivovideo/tailwind-config'
 
 const config: Pick<Config, 'prefix' | 'presets' | 'content'> = {
   content: ['./src/**/*.tsx'],

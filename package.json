@@ -5,7 +5,9 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
-    "clean": "turbo clean"
+    "clean": "turbo clean",
+    "version-packages": "changeset version",
+    "release": "turbo build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.2",

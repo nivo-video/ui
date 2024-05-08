@@ -1,5 +1,5 @@
 {
-	"name": "@nivo/docs",
+	"name": "@nivovideo/docs",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -8,8 +8,8 @@
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "^1.3.3",
-		"@nivo/tailwind-config": "workspace:*",
-		"@nivo/typescript-config": "workspace:*",
+		"@nivovideo/tailwind-config": "workspace:*",
+		"@nivovideo/typescript-config": "workspace:*",
 		"@storybook/addon-essentials": "^8.0.9",
 		"@storybook/addon-interactions": "^8.0.9",
 		"@storybook/addon-links": "^8.0.9",
@@ -25,6 +25,6 @@
 		"typescript": "^5.3.3"
 	},
 	"dependencies": {
-		"@nivo/ui": "workspace:*"
+		"@nivovideo/ui": "workspace:*"
 	}
 }

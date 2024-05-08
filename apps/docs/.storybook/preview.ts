@@ -1,4 +1,4 @@
-import '@nivo/ui/styles.css'
+import '@nivovideo/ui/styles.css'
 import '../src/styles/globals.css'
 import type { Preview } from '@storybook/react'
 
