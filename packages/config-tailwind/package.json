@@ -1,7 +1,6 @@
 {
 	"name": "@nivovideo/tailwind-config",
-	"version": "1.0.2",
-	"private": true,
+	"version": "1.0.3",
 	"exports": {
 		".": "./tailwind.config.ts"
 	},
