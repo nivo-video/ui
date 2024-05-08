@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button } from '@nivo/ui/button'
+import { Button } from '@nivovideo/ui/button'
 
 const meta = {
   title: 'Components/Button',

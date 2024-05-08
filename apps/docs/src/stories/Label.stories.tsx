@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Label } from '@nivo/ui/label'
+import { Label } from '@nivovideo/ui/label'
 
 const meta = {
   title: 'Components/Label',

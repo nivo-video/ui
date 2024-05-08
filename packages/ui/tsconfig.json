@@ -1,5 +1,5 @@
 {
-	"extends": "@nivo/typescript-config/react-library.json",
+	"extends": "@nivovideo/typescript-config/react-library.json",
 	"include": ["."],
 	"exclude": ["dist", "build", "node_modules"]
 }

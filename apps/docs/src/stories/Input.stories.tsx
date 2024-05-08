@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Input } from '@nivo/ui/input'
-import { InputErrorMessage } from '@nivo/ui/input-error-message'
-import { Label } from '@nivo/ui/label'
+import { Input } from '@nivovideo/ui/input'
+import { InputErrorMessage } from '@nivovideo/ui/input-error-message'
+import { Label } from '@nivovideo/ui/label'
 
 const meta = {
   title: 'Components/Input',

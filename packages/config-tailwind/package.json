@@ -1,12 +1,12 @@
 {
-	"name": "@nivo/tailwind-config",
-	"version": "1.0.1",
+	"name": "@nivovideo/tailwind-config",
+	"version": "1.0.2",
 	"private": true,
 	"exports": {
 		".": "./tailwind.config.ts"
 	},
 	"devDependencies": {
-		"@nivo/typescript-config": "workspace:*",
+		"@nivovideo/typescript-config": "workspace:*",
 		"tailwindcss": "^3.4.1"
 	}
 }

@@ -1,6 +1,6 @@
 {
-	"name": "@nivo/typescript-config",
-	"version": "1.0.1",
+	"name": "@nivovideo/typescript-config",
+	"version": "1.0.2",
 	"private": true,
 	"license": "MIT",
 	"publishConfig": {

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Checkbox } from '@nivo/ui/checkbox'
-import { InputErrorMessage } from '@nivo/ui/input-error-message'
-import { Label } from '@nivo/ui/label'
+import { Checkbox } from '@nivovideo/ui/checkbox'
+import { InputErrorMessage } from '@nivovideo/ui/input-error-message'
+import { Label } from '@nivovideo/ui/label'
 import { useState } from 'react'
 
 const meta = {
