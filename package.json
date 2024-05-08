@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.2",
+    "@changesets/cli": "^2.27.1",
     "turbo": "latest"
   },
   "packageManager": "pnpm@9.0.4",
