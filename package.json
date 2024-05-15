@@ -5,13 +5,10 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
-    "clean": "turbo clean",
-    "version-packages": "changeset version",
-    "release": "turbo build --filter=docs^... && changeset publish"
+    "clean": "turbo clean"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.2",
-    "@changesets/cli": "^2.27.1",
     "turbo": "latest"
   },
   "packageManager": "pnpm@9.0.4",
